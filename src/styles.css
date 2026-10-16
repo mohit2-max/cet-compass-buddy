@@ -131,3 +131,40 @@
 @utility animate-rise {
   animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
+
+/* Themes — applied as a class on <html> */
+.theme-dark {
+  --paper: oklch(0.17 0.006 80);
+  --ink: oklch(0.93 0.02 90);
+  --card: oklch(0.21 0.008 80);
+  --card-foreground: var(--ink);
+  --popover: oklch(0.21 0.008 80);
+  --primary-foreground: oklch(0.17 0.006 80);
+  --secondary: oklch(0.26 0.01 80);
+  --muted: oklch(0.25 0.008 80);
+  --muted-foreground: oklch(0.68 0.015 85);
+  --accent: oklch(0.84 0.16 90);
+  --accent-foreground: oklch(0.17 0.006 80);
+  --highlight: oklch(0.84 0.16 90 / 0.35);
+  --border: oklch(0.93 0.02 90 / 0.13);
+  --input: oklch(0.93 0.02 90 / 0.2);
+  --shadow-hard: 4px 4px 0 0 oklch(0.84 0.16 90 / 0.55);
+  --shadow-hard-sm: 2px 2px 0 0 oklch(0.84 0.16 90 / 0.55);
+}
+.theme-bw {
+  --paper: oklch(0.99 0 0);
+  --ink: oklch(0.12 0 0);
+  --card: oklch(1 0 0);
+  --popover: oklch(1 0 0);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.94 0 0);
+  --muted: oklch(0.95 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: oklch(0.88 0 0);
+  --accent-foreground: oklch(0.12 0 0);
+  --highlight: oklch(0.85 0 0 / 0.8);
+  --success: oklch(0.35 0 0);
+  --border: oklch(0.12 0 0 / 0.16);
+  --input: oklch(0.12 0 0 / 0.25);
+}
+.theme-dark .accent-ink, .theme-bw .accent-ink { accent-color: var(--ink); }
