@@ -66,7 +66,7 @@ function TestRunner() {
 
   useEffect(() => { if (left === 0) submit(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [left]);
 
-  const q = test.questions[idx];
+  const q = test.questions[idx] ?? test.questions[0]!;
   const mm = String(Math.floor(left / 60)).padStart(2, "0");
   const ss = String(left % 60).padStart(2, "0");
 
