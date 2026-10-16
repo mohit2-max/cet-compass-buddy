@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const PROBLEMS = [
+const PROBLEMS: [string, string][] = [
   ["“I wasted 11th & 12th. Is it too late?”", "Start where you are. The planner builds a day-by-day path from your exam date — high-weightage chapters first."],
   ["“Boards or CET — what do I focus on?”", "80% of CET is 12th syllabus. The same chapters serve both, so we sequence them to cover boards and CET together."],
   ["“I know theory but CET questions feel different.”", "CET rewards speed, not depth. Timed mocks in the exact pattern — 1 mark PC, 2 marks Maths, no negative marking."],

@@ -17,7 +17,7 @@ export const Route = createFileRoute("/guidance")({
   component: Guidance,
 });
 
-const PRINCIPLES = [
+const PRINCIPLES: [string, string][] = [
   ["Speed > depth", "CET questions are mostly direct. 150 questions in 180 minutes means ~72 seconds each. Train for speed with timed sets, not long derivations."],
   ["PYQs first, everything else later", "Solve at least the last 4 years of memory-based papers before buying any test series. They teach you what CET actually asks."],
   ["State board textbook is the base", "Especially for Chemistry — many questions come line-for-line from the 12th Maharashtra board textbook. Read it, then highlight."],
@@ -31,7 +31,7 @@ const SUBJECTS = [
   { s: "Biology", tip: "NCERT-style recall plus state board diagrams. Genetics, Molecular Basis of Inheritance and Biotechnology carry steady weightage. Revise from your own short notes." },
 ];
 
-const PHASES = [
+const PHASES: [string, string][] = [
   ["6+ months left", "Finish 12th syllabus by weightage. 1 chapter test per chapter. Weekend: one 11th chapter."],
   ["3–6 months", "Close the syllabus, start PYQs topic-wise. Mark weak chapters in the planner and revisit every Sunday."],
   ["Boards season", "Same chapters serve both. Write answers for boards; solve 30 MCQs/day so CET speed doesn't drop."],
@@ -39,7 +39,7 @@ const PHASES = [
   ["Last 7 days", "Only formula sheets, PYQ mistakes, and 2 light mocks. Check your hall ticket, centre and shift timing."],
 ];
 
-const CHANNELS = [
+const CHANNELS: [string, string][] = [
   ["RG Lectures", "Maths concepts & CET-level tricks"],
   ["Dinesh Sir", "Maths shortcuts for CET"],
   ["Ganitank", "Maths practice & strategy"],
@@ -47,7 +47,7 @@ const CHANNELS = [
   ["MHT CET topper interview", "How 99.9+ scorers planned"],
 ];
 
-const FAQ = [
+const FAQ: [string, string][] = [
   ["I wasted 11th and 12th. Is 90+ percentile still possible?", "Yes — CET is a speed-and-recall exam built mostly on the 12th syllabus. With 6–7 focused months, high-weightage chapters first and daily PYQs, a big jump is realistic. Use the first attempt for practice and the second to go all in."],
   ["Should I drop a year?", "Only if you can honestly commit to 8+ months of daily work. Ask: what will be different this time? If the answer is 'a plan and a routine', set them up here first and test yourself for 30 days."],
   ["Boards or CET — what should I focus on?", "Both share the 12th syllabus. Until boards, study concepts in board style and keep a small daily MCQ set. After boards, switch fully to CET mocks."],
