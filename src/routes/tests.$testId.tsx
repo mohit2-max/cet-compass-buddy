@@ -49,10 +49,10 @@ function TestRunner() {
     let score = 0, max = 0;
     test.questions.forEach((q, i) => {
       const m = MARKS[q.subject];
-      by[q.subject] ??= { score: 0, max: 0 };
-      by[q.subject].max += m;
+      const row = (by[q.subject] ??= { score: 0, max: 0 });
+      row.max += m;
       max += m;
-      if (answers[i] === q.answer) { by[q.subject].score += m; score += m; }
+      if (answers[i] === q.answer) { row.score += m; score += m; }
     });
     return { score, max, by };
   }, [answers, test]);
